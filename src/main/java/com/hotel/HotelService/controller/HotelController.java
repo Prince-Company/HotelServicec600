@@ -17,7 +17,7 @@ public class HotelController {
     private HotelService hotelservice;
 
     //i am hotel controller
-
+//i am in feature branch now
     @PostMapping("/add")
     public ResponseEntity<Hotel>createHotel(@RequestBody Hotel hotel){
         return ResponseEntity.status(HttpStatus.CREATED).body(hotelservice.createHotel(hotel));
