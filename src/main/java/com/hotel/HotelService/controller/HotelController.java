@@ -16,6 +16,8 @@ public class HotelController {
     @Autowired
     private HotelService hotelservice;
 
+    //i am hotel controller
+
     @PostMapping("/add")
     public ResponseEntity<Hotel>createHotel(@RequestBody Hotel hotel){
         return ResponseEntity.status(HttpStatus.CREATED).body(hotelservice.createHotel(hotel));
